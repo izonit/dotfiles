@@ -127,10 +127,8 @@ bindkey '^H' backward-kill-word
 bindkey -e
 alias matrix="cmatrix -b"
 alias bonsai="cbonsai --live -m 'Hi :)'"
-alias steamtui="cd /home/daniil/Downloads && ./steam-tui"
 alias fetch="clear && echo 'Hello there, $USER!' && neofetch"
 alias disk="clear && duf /home"
-alias micro="./micro"
 fn cleanOrphans() {
     if [[ ! -n $(pacman -Qdt) ]]; then
       echo "No orphans to remove."
