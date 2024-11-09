@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "yazi-rs/plugins:full-border", rev = "102a0cd" }, { use = "Ape/simple-status", rev = "709f653" }, { use = "yazi-rs/plugins:no-status", rev = "102a0cd" }, { use = "yazi-rs/plugins:smart-filter", rev = "102a0cd" }, { use = "Rolv-Apneseth/starship", rev = "77a65f5" }, { use = "Tyarel8/video-ffmpeg", rev = "fe26a18" }]
+
+[flavor]
+deps = []

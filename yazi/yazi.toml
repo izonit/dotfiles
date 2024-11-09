@@ -1,0 +1,18 @@
+[manager]
+show_hidden = true
+sort_dir_first = true
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true, for = "unix" },
+	{ run = "%EDITOR% %*",  block = true, for = "windows" },
+]
+
+[plugin]
+prepend_previewers = [
+  { mime = "video/*", run = "video-ffmpeg" },
+]
+
+prepend_preloaders = [
+  { mime = "video/*", run = "video-ffmpeg" },
+]
