@@ -4,7 +4,7 @@
     "height": 30,
     "modules-left": ["hyprland/workspaces", "hyprland/window"], 
     "modules-center": ["clock"],
-    "modules-right": ["network", "pulseaudio", "battery", "cpu", "memory"],
+    "modules-right": ["network", "pulseaudio", "hyprland/language", "battery", "cpu", "memory"],
 	"hyprland/window": {
     		"format": "<b><i>{}</i></b>",
     		"max-length": 60,
@@ -12,6 +12,12 @@
     		"offscreen-css": true,
     		"offscreen-css-text": "(inactive)"
 	},
+  "hyprland/language": {
+    "format": "🅰 {}",
+    "format-en": "eng",
+    "format-ru": "рус",
+    "keyboard-name": "at-translated-set-2-keyboard"
+  },
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
@@ -22,14 +28,9 @@
 			"5": " ",
 		},
 	},
-	"custom/power": {
-		"format": "󰐥",
-		"tooltip-format": "Power menu",
-		"on-click": "$HOME/bin/waybar-power.sh"
-	},
 	"memory": {
                 "interval": 10,
-                "format": " {}%",
+                "format": " {}%",
                 "max-length": 10
         },
         "cpu": {
@@ -38,7 +39,7 @@
                 "max-length": 10
         },
 	"clock": {
-		      "format": "<b>󰅐 {:%H:%M}</b>",
+		     "format": "<b>󰅐 {:%H:%M}</b>",
         	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         	"format-alt": "{:%d.%m.%Y}"
 	},
@@ -75,4 +76,3 @@
         	},
     	}
 }
-
