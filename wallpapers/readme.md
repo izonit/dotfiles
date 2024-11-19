@@ -1,2 +1,2 @@
-Starry night: [r/wallpapers](https://reddit.com/r/wallpapers)
-Abstract wallpaper: [This guy's dotfiles](https://github.com/DADA30000/.dotfiles)
+- Starry night: [r/wallpapers](https://reddit.com/r/wallpapers)
+- Abstract wallpaper: [This guy's dotfiles](https://github.com/DADA30000/.dotfiles)
