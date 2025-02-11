@@ -1,5 +1,7 @@
 if status is-interactive
-  # starship init fish | source    
+   set -x EDITOR emacs
+   set -x VISUAL emacs
+   # starship init fish | source
 end
 
 alias ls='echo "==========================================" && pwd && echo "==========================================" && echo "" && eza --color=always --icons=always -1 -a'

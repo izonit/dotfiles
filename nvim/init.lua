@@ -21,9 +21,9 @@ require('packer').startup(function(use)
 
   -- Plugins
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-  use 'folke/tokyonight.nvim'
   use 'reedes/vim-pencil'
   use 'tpope/vim-fugitive'
+  use 'blazkowolf/gruber-darker.nvim'
   use 'junegunn/goyo.vim'
   use 'junegunn/limelight.vim'
   use 'ap/vim-css-color'
@@ -60,9 +60,7 @@ vim.o.expandtab = true -- Convert tabs to spaces
 -- ======================================
 
 vim.opt.termguicolors = true
-vim.g.tokyonight_hide_inactive_statusline = true
-vim.g.tokyonight_lualine_bold = true
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd.colorscheme("gruber-darker")
 
 -- ======================================
 --             General Settings
@@ -101,6 +99,13 @@ map('n', '<C-P>', ':bp<CR>', { noremap = true })
 --             Plugin Configurations
 -- ======================================
 
+require("gruber-darker").setup({
+  bold = true,       -- Disable bold text
+  italic = true,      -- Enable italics
+  underline = false,  -- Disable underlines
+  contrast = "medium"   -- Options: "soft", "medium", "hard"
+})
+
 -- Vim-pencil configuration
 vim.g['pencil#wrapModeDefault'] = 'soft'
 vim.api.nvim_exec([[
@@ -118,7 +123,6 @@ vim.api.nvim_exec([[
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'tokyonight',
     component_separators = {'|', '|'},
     section_separators = {'', ''},
   },

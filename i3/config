@@ -15,11 +15,15 @@ exec --no-startup-id dex --autostart --environment i3
 # Disable touchpad
 exec_always --no-startup-id xinput --disable 14
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill "/home/daniil/Pictures/starry_night.jpeg"
+exec_always --no-startup-id feh --bg-fill "/home/daniil/Pictures/burning_earth.png"
 # Compositor
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
-## Polybar
-# exec --no-startup-id polybar
+# Fonts
+exec --no-startup-id xsetroot -xcf /usr/share/icons/capitaine-cursors-light/cursors/left_ptr 24
+# idk
+exec --no-startup-id export QT_QPA_PLATFORMTHEME=''
+# Language
+# exec --no-startup-id setxkbmap -layout us,ru -option grp:alt_shift_toggle
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -48,6 +52,13 @@ bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 # browser
 bindsym $mod+b exec --no-startup-id qutebrowser
+
+# Thunar (file explorer)
+bindsym $mod+e exec --no-startup-id thunar
+# Set thunar as my file picker
+set $file_manager thunar
+exec --no-startup-id xdg-mime default thunar.desktop inode/directory
+exec --no-startup-id export BROWSER=thunar
 
 # i3lock
 bindsym $mod+l exec --no-startup-id i3lock
@@ -157,11 +168,11 @@ mode "resize" {
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default" 
+        bindsym $mod+r mode "default"
         bindsym $mod+r mode "resize"
 }
 
-set $ws1 "1:  Text Editor"
+set $ws1 "1:  Emacs"
 set $ws2 "2:  Browser"
 set $ws3 "3:  Terminal"
 set $ws4 "4:  Explorer"

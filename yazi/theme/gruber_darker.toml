@@ -1,0 +1,24 @@
+[theme]
+bg = "#181818"   # Dark Background
+fg = "#e4e4ef"   # Light Gray Foreground
+accent = "#ffdd33"   # Yellow Accent (For selected items)
+
+[filetype]
+directory = "#f4cf86"   # Light brown for directories
+executable = "#8cffba"  # Green for executables
+symlink = "#66aabb"     # Blue for symlinks
+image = "#ffb964"       # Orange for images
+audio = "#8c8cff"       # Purple for audio files
+video = "#ff668c"       # Pink for video files
+archive = "#ff8700"     # Orange for archives
+document = "#f4cf86"    # Light yellow for documents
+
+[ui]
+statusbar_fg = "#e4e4ef"
+statusbar_bg = "#282828"
+
+preview_fg = "#e4e4ef"
+preview_bg = "#181818"
+
+cursor_fg = "#000000"
+cursor_bg = "#ffdd33"

@@ -12,4 +12,10 @@ config.set('content.local_content_can_access_file_urls', False, 'file:///home/da
 # Dark mode
 #config.set('colors.webpage.darkmode.enabled', True)
 
+# Thunar as the file picker
+c.editor.command = ["thunar", "{file}"]
+
+# Dark mode
+config.set('colors.webpage.preferred_color_scheme', 'dark')
+
 config.source('qb-themes/themes/onedark.py')
